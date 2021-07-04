@@ -14,6 +14,10 @@ body {
   font-weight: 900;
 }
 
+nav {
+  z-index: 2;
+}
+
 nav a.nav-link {
   font-weight: 500;
   letter-spacing: 0.2rem;
@@ -37,4 +41,69 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
   border-top: 0.187rem solid var(--primary-orange);
+}
+
+.bg-custom {
+  background-color: #413f44 !important;
+}
+
+/* ****************************HEADER************************************ */
+
+.header-wraper {
+  position: relative;
+  background: url(background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  font-family: "Roboto Condensed", sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  letter-spacing: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-orange);
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.typing-text {
+  font-size: 2rem;
+  color: white;
+}
+
+.contact-me-btn {
+  text-decoration: none;
+  border: 1px solid orange;
+  display: inline;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.62rem 0.75rem 0.75rem 0.75rem;
+  color: white;
+  margin: 2rem;
+}
+
+.contact-me-btn:hover {
+  background-color: white;
+  color: orange;
+  transition: 0.2s ease-in-out;
+}
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
 }
